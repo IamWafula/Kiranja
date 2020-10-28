@@ -1,0 +1,76 @@
+* {
+    -webkit-animation: transition 16s ease infinite;
+    -moz-animation: transition 16s ease infinite;
+    -o-animation: transition 16s ease infinite;
+    animation: transition 16s ease infinite;
+}
+
+div {
+    border-radius: 5px;
+    width: 17cm;
+    background-color: rgba(10, 77, 104, 0.918);
+    border-color: #000000;
+    outline-color: #000000;
+}
+
+body {
+    font-family: arial;
+    background: linear-gradient(195deg, #80cbe1, #2e2a7c);
+    background-size: 400% 400%;
+}
+
+.header {
+    background-color: #398AA4;
+    text-align: center;
+    font-weight: 800;
+    width: 1200px;
+    height: 55px
+}
+
+@-webkit-keyframes transition {
+    0% {
+        background-position: 75% 0%
+    }
+    50% {
+        background-position: 26% 100%
+    }
+    100% {
+        background-position: 75% 0%
+    }
+}
+
+@-moz-keyframes transition {
+    0% {
+        background-position: 75% 0%
+    }
+    50% {
+        background-position: 26% 100%
+    }
+    100% {
+        background-position: 75% 0%
+    }
+}
+
+@-o-keyframes transition {
+    0% {
+        background-position: 75% 0%
+    }
+    50% {
+        background-position: 26% 100%
+    }
+    100% {
+        background-position: 75% 0%
+    }
+}
+
+@keyframes transition {
+    0% {
+        background-position: 75% 0%
+    }
+    50% {
+        background-position: 26% 100%
+    }
+    100% {
+        background-position: 75% 0%
+    }
+}

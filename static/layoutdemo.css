@@ -1,0 +1,37 @@
+#nav {
+    float: left;
+}
+
+#else {
+    float: right;
+    /*padding-right: 1000px;*/
+    margin-right: 200px;
+    margin-left: auto;
+}
+
+.navli a {
+    display: block;
+    text-decoration: none;
+    color: rgb(90, 144, 214);
+}
+
+.navli a:hover {
+    background-color: rgba(105, 90, 205, 0.151);
+    color: black;
+}
+
+#navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #202020d8;
+    height: 100%;
+    position: fixed;
+    border-radius: 0px 10px 0px 10px;
+    padding-top: 50px;
+}
+
+.navli a {
+    padding: 8px 0 8px 16px;
+}
