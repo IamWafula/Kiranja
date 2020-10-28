@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>APP DEMO</title>
+    <div class="header">
+        <h1>Timetable</h1>
+    </div>
+</head>
+
+<link rel="stylesheet" href="/static/demo.css">
+<link rel="stylesheet" href="/static/w3.css">
+<link rel="stylesheet" href="/static/layoutdemo.css">
+
+<body>
+
+    <div id="nav">
+        <ul id="navlist">
+            <li class="navli"><a href="/login">Login</a></li>
+            <li class="navli"><a href="/signup">Signup</a></li>
+            <li class="navli"><a href="/home">Timetable</a></li>
+            <li class="navli"><a href="/teachers">Teachers</a></li>
+            <li class="navli"><a href="/demo">Demo</a></li>
+        </ul>
+
+    </div>
+
+    <div id="else">
+        <div id="card">
+            <center>
+                <form action="{{ url_for('addrec') }}" method="POST">
+                    <h3>Judge Details:</h3>
+                    <p>
+                        Judge One
+                        <input type="tel" name="Judge1">
+                    </p>
+                    <p>
+                        Judge Two
+                        <input type="tel" name="Judge2">
+                    </p>
+                    <input type="submit" value="done">
+                </form>
+            </center>
+        </div>
+    </div>
+
+</body>
+
+</html>

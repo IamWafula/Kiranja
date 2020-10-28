@@ -1,0 +1,144 @@
+<head>
+    <div class="header">
+        <h1>Timetable</h1>
+    </div>
+</head>
+
+<link rel="stylesheet" href="/static/table.css">
+<script src="/static/jquery-3.4.1.js"></script>
+<script src="/static/buttons.js"></script>
+<link rel="stylesheet" href="/static/w3.css">
+
+<div>
+    <div class="w3-bar w3-black">
+        <a href="/home" class="w3-bar-item w3-button">Home</a>
+        <a href="/teachers" class="w3-bar-item w3-button">Teachers Setup</a>
+        <a href="/demo" class="w3-bar-item w3-button">Demo</a>
+    </div>
+</div>
+
+
+<body>
+
+
+    <hr>
+
+    <div id="else">
+        <center>
+            <table class="steelBlueCols" id="lessontable">
+                <thead>
+                    <tr id="toptop">
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="lessons">
+                        <td><input type="time" id="sttime"> to <input type="time" id="endtime"></td>
+                        <td>
+                            <!--
+                        first lesson Monday
+                        -->
+                            <select name="Lesson" id="les1">
+                                <option value="English">English</option>
+                                <option value="Kiswahili">Kiswahili</option>
+                                <option value="Geography">Geography</option>
+                                <option value="History">History</option>
+                                <option value="CRE">CRE</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Computer">Computer</option>
+                                <option value="Mathematics">Mathematics</option>
+                        </select>
+
+                        </td>
+                        <td>
+                            <!--first lesson Tuesday-->
+                            <select name="Lesson" id="les2">
+                                <option value="English">English</option>
+                                <option value="Kiswahili">Kiswahili</option>
+                                <option value="Geography">Geography</option>
+                                <option value="History">History</option>
+                                <option value="CRE">CRE</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Computer">Computer</option>
+                                <option value="Mathematics">Mathematics</option>
+                        </select>
+                        </td>
+                        <td>
+                            <!--First lesson Wednesday-->
+                            <select name="Lesson" id="les3">
+                                <option value="English">English</option>
+                                <option value="Kiswahili">Kiswahili</option>
+                                <option value="Geography">Geography</option>
+                                <option value="History">History</option>
+                                <option value="CRE">CRE</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Computer">Computer</option>
+                                <option value="Mathematics">Mathematics</option>
+                        </select>
+                        </td>
+                        <td>
+                            <!--Fisrt lesson Thursday-->
+                            <select name="Lesson" id="les4">
+                                <option value="English">English</option>
+                                <option value="Kiswahili">Kiswahili</option>
+                                <option value="Geography">Geography</option>
+                                <option value="History">History</option>
+                                <option value="CRE">CRE</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Computer">Computer</option>
+                                <option value="Mathematics">Mathematics</option>
+                        </select>
+                        </td>
+                        <td>
+                            <!--First lesson Friday-->
+                            <select name="Lesson" id="les5">
+                                <option value="English">English</option>
+                                <option value="Kiswahili">Kiswahili</option>
+                                <option value="Geography">Geography</option>
+                                <option value="History">History</option>
+                                <option value="CRE">CRE</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Computer">Computer</option>
+                                <option value="Mathematics">Mathematics</option>
+                        </select>
+                        </td>
+                    </tr>
+
+                    <tr id="break">
+                        <td><input type="time"> to <input type="time"></td>
+                        <!--Break-->
+                    </tr>
+
+                </tbody>
+                </tr>
+            </table>
+        </center>
+    </div>
+
+    <hr>
+    <center>
+        <div>
+            <button id="Lbtn"> AddLesson </button>
+            <button id="Bbtn"> AddBreak </button>
+            <button id="Dbtn"> Delete </button>
+            <button id="submit"> Done </button>
+        </div>
+        <center>
+</body>
+
+</html>
