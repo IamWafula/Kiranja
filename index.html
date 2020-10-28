@@ -1,0 +1,151 @@
+<head>
+    <img src="bk2.jpg" alt="Logo">
+    <div class="header">
+        <h1>Timetable</h1>
+    </div>
+</head>
+
+<link rel="stylesheet" href="table.css">>
+<script src="script.js"></script>
+<script src="jquery-3.4.1.js"></script>
+
+<body>
+  <hr>
+
+    <div>
+        <center>
+            <table class="steelBlueCols" id="lessontable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="lessons">
+                        <td><input type="time"> to <input type="time"></td>
+                        <td>
+                            <!--
+                        first lesson Monday
+                        -->
+                            <select name="Lesson">
+                                <option value="English">English</option>
+                                <option value="English">Kiswahili</option>
+                                <option value="English">Geography</option>
+                                <option value="English">History</option>
+                                <option value="English">CRE</option>
+                                <option value="English">Biology</option>
+                                <option value="English">Chemistry</option>
+                                <option value="English">Physics</option>
+                                <option value="English">Computer</option>
+                                <option value="English">Mathematics</option>
+                        </select>
+												
+                        </td>
+                        <td>
+                            <!--first lesson Tuesday-->
+                            <select name="Lesson">
+                                <option value="English">English</option>
+                                <option value="English">Kiswahili</option>
+                                <option value="English">Geography</option>
+                                <option value="English">History</option>
+                                <option value="English">CRE</option>
+                                <option value="English">Biology</option>
+                                <option value="English">Chemistry</option>
+                                <option value="English">Physics</option>
+                                <option value="English">Computer</option>
+                                <option value="English">Mathematics</option>
+                        </select>
+                        </td>
+                        <td>
+                            <!--First lesson Wednesday-->
+                            <select name="Lesson">
+                            <option value="English">English</option>
+                            <option value="English">Kiswahili</option>
+                            <option value="English">Geography</option>
+                            <option value="English">History</option>
+                            <option value="English">CRE</option>
+                            <option value="English">Biology</option>
+                            <option value="English">Chemistry</option>
+                            <option value="English">Physics</option>
+                            <option value="English">Computer</option>
+                            <option value="English">Mathematics</option>
+                        </select>
+                        </td>
+                        <td>
+                            <!--Fisrt lesson Thursday-->
+                            <select name="Lesson">
+                            <option value="English">English</option>
+                            <option value="English">Kiswahili</option>
+                            <option value="English">Geography</option>
+                            <option value="English">History</option>
+                            <option value="English">CRE</option>
+                            <option value="English">Biology</option>
+                            <option value="English">Chemistry</option>
+                            <option value="English">Physics</option>
+                            <option value="English">Computer</option>
+                            <option value="English">Mathematics</option>
+                        </select>
+                        </td>
+                        <td>
+                            <!--First lesson Friday-->
+                            <select name="Lesson">
+                            <option value="English">English</option>
+                            <option value="English">Kiswahili</option>
+                            <option value="English">Geography</option>
+                            <option value="English">History</option>
+                            <option value="English">CRE</option>
+                            <option value="English">Biology</option>
+                            <option value="English">Chemistry</option>
+                            <option value="English">Physics</option>
+                            <option value="English">Computer</option>
+                            <option value="English">Mathematics</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr id="break">
+                        <td><input type="time"> to <input type="time"></td>
+                        <!--Break-->
+                    </tr>
+                </tbody>
+                </tr>
+            </table>
+      </center>
+    </div>
+
+		<script>
+			$(document).ready(function(){
+  				$("#Lbtn").click(function(){
+   		 			$("#lessons").clone().appendTo("#lessontable");
+  				});
+
+					$("#Bbtn").click(function(){
+    				$("#break").clone().appendTo("#lessontable");
+  				});
+
+					$("#Dbtn").click(function(){
+    				$("#lessontable tr:last").remove();
+  				});
+
+			});
+
+		</script>
+
+		<hr>
+		  <center>
+				<div>
+        	<button id="Lbtn"> AddLesson </button>
+					<button id="Bbtn"> AddBreak </button>
+					<button id="Dbtn"> Delete </button>
+					<button id="submit"> Done </button>
+				</div>
+      <center>
+
+
+</body>
+
+</html>
